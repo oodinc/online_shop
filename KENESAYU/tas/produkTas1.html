@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KENESAYU</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="../index.html">
+                <img src="path/to/your/logo.png" alt="Logo" />
+            </a>
+
+            <!-- Toggler button for small screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#tas/produkTas">Tas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#produkKaos">Kaos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#produkParfum">Parfum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login/Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <div class="product-container">
+            <!-- Left side - Product Image -->
+            <div class="product-image">
+                <img src="https://via.placeholder.com/300x300" alt="Product Image" />
+            </div>
+
+            <!-- Right side - Product Details -->
+            <div class="product-details">
+                <h2 class="product-title">Nama Tas 1</h2>
+                <p class="product-price">Rp50.000</p>
+
+                <!-- Product Info -->
+                <div class="product-info">
+                    <label for="size">Ukuran:</label>
+                    <select id="size">
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                    </select>
+                </div>
+
+                <div class="product-info">
+                    <label for="quantity">Jumlah:</label>
+                    <input type="number" id="quantity" name="quantity" min="0" pattern="[0-9]+"
+                        placeholder="Masukkan jumlah pesanan" />
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="product-actions">
+                    <button class="btn btn-danger" onclick="redirectToCheckout()">Beli Sekarang</button>
+                    <button class="btn btn-success">Tambah ke Keranjang</button>
+                </div>
+            </div>
+        </div>
+        <div class="product-container">
+            <!-- Product Description -->
+            <div class="product-description">
+                <h5>Deskripsi</h5>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo
+                    tempore ipsa harum delectus iusto quo nisi ut est ab, nihil dolor
+                    libero accusantium impedit. Deserunt facere necessitatibus eligendi
+                    perspiciatis quasi, aperiam, quis quidem veritatis quae quas fugiat
+                    possimus saepe nisi sint laudantium omnis repellendus recusandae
+                    aliquam? Maiores blanditiis tempore consequatur. Dolor, facere
+                    necessitatibus. Dicta libero harum consequuntur commodi laboriosam
+                    esse tenetur consectetur sequi beatae ad optio minima fugit pariatur
+                    quo, officia dolorem excepturi, ratione, odit iste! Dolorem possimus
+                    officia molestiae iure corrupti tempore soluta ad accusamus ut quos.
+                    Debitis impedit sint, dolore earum fuga eius tempora dignissimos
+                    deserunt enim quo.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo
+                    tempore ipsa harum delectus iusto quo nisi ut est ab, nihil dolor
+                    libero accusantium impedit. Deserunt facere necessitatibus eligendi
+                    perspiciatis quasi, aperiam, quis quidem veritatis quae quas fugiat
+                    possimus saepe nisi sint laudantium omnis repellendus recusandae
+                    aliquam? Maiores blanditiis tempore consequatur. Dolor, facere
+                    necessitatibus. Dicta libero harum consequuntur commodi laboriosam
+                    esse tenetur consectetur sequi beatae ad optio minima fugit pariatur
+                    quo, officia dolorem excepturi, ratione, odit iste! Dolorem possimus
+                    officia molestiae iure corrupti tempore soluta ad accusamus ut quos.
+                    Debitis impedit sint, dolore earum fuga eius tempora dignissimos
+                    deserunt enim quo.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo
+                    tempore ipsa harum delectus iusto quo nisi ut est ab, nihil dolor
+                    libero accusantium impedit. Deserunt facere necessitatibus eligendi
+                    perspiciatis quasi, aperiam, quis quidem veritatis quae quas fugiat
+                    possimus saepe nisi sint laudantium omnis repellendus recusandae
+                    aliquam? Maiores blanditiis tempore consequatur. Dolor, facere
+                    necessitatibus. Dicta libero harum consequuntur commodi laboriosam
+                    esse tenetur consectetur sequi beatae ad optio minima fugit pariatur
+                    quo, officia dolorem excepturi, ratione, odit iste! Dolorem possimus
+                    officia molestiae iure corrupti tempore soluta ad accusamus ut quos.
+                    Debitis impedit sint, dolore earum fuga eius tempora dignissimos
+                    deserunt enim quo.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Random Products Section -->
+    <div class="container mt-3">
+        <h2 class="mb-4 text-center" style="color: #15003b">Produk Lainnya</h2>
+        <div class="product-container">
+            <div class="row" id="randomProducts">
+                <!-- JavaScript will populate this section -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <!-- No WhatsApp -->
+                <div class="col-md-4 mb-3">
+                    <p>
+                        <i class="bi bi-whatsapp text-success"></i>
+                        <a href="https://api.whatsapp.com/send?phone=6212345678" class="text-white text-decoration-none"
+                            target="_blank">+62 1234 5678</a>
+                    </p>
+                </div>
+
+                <!-- Alamat -->
+                <div class="col-md-4 mb-3">
+                    <p>
+                        <i class="bi bi-house-door text-danger"></i>
+                        <a href="https://www.google.com/maps?q=Jalan+Contoh+No.+123,+Kota+Contoh,+12345"
+                            class="text-white text-decoration-none" target="_blank">
+                            Jalan Contoh No. 123, Kota Contoh, 12345
+                        </a>
+                    </p>
+                </div>
+
+                <!-- Jam Operasional -->
+                <div class="col-md-4 mb-3">
+                    <p><i class="bi bi-clock text-primary"></i> Jam Operasional:</p>
+                    <p>Senin - Sabtu</p>
+                    <p>08.00 - 17.00 WIB</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

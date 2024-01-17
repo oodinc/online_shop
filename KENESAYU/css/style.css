@@ -1,0 +1,168 @@
+.navbar-brand img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar-toggler-icon {
+    color: #15003b;
+    /* Dark purple color */
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #15003b;
+    /* Dark purple color */
+}
+
+.navbar-light .navbar-toggler-icon {
+    color: #15003b;
+    /* Dark purple color */
+}
+
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
+
+.product-details {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.product-title {
+    color: #15003b;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    color: #343a40;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.product-info label {
+    margin-right: 10px;
+}
+
+.product-info select,
+.product-info input {
+    width: 225px;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.product-actions {
+    margin-top: 20px;
+}
+
+.product-description {
+    margin-top: 20px;
+}
+
+/* Additional styles for better aesthetics */
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="number"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px; /* Tambahkan padding */
+    border-radius: 10px; /* Tambahkan border-radius untuk sudut yang lebih lembut */
+}
+
+#checkoutForm {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.checkoutForm label {
+    display: block;
+    margin-bottom: 5px;
+    color: #15003b;
+}
+
+#dropshipperInputs {
+    display: none;
+    grid-column: span 2; 
+}
+
+#dropshipperInputs label {
+    display: block;
+    color: #15003b;
+}
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+}
+
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-switch label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc; 
+    border-radius: 15px; 
+    cursor: pointer;
+}
+
+.toggle-switch label:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 3px;
+    background-color: #fff; 
+    border-radius: 50%; 
+    transition: 0.4s; 
+}
+
+.toggle-switch input:checked + label {
+    background-color: #15003b; 
+}
+
+.toggle-switch input:checked + label:before {
+    transform: translateX(24px); 
+}
