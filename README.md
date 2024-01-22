@@ -15,6 +15,6 @@ This project is a web-based e-commerce platform created using HTML, CSS, and Boo
 To get started with the project, simply clone the repository:
 
 ```bash
-git clone https://github.com/your-username/kenesayu.git
+git clone https://github.com/oodinc/online_store.git
 ```
 Then, open the index.html file in your preferred web browser.
