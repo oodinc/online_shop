@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KENESAYU</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand fixed-top shadow-sm">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="../index.html">
+                <img src="path/to/your/logo.png" alt="Logo" />
+            </a>
+
+            <!-- Toggler button for small screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#tas/produkTas">Tas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#produkKaos">Kaos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#produkParfum">Parfum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login/Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top: 80px;">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="text-center mb-4">Checkout</h1>
+                <table>
+                    <tr>
+                        <td>
+                            <p class="active">Informasi Pembeli</p>
+                        </td>
+                        <td><p>></p></td>
+                        <td>
+                            <p class="text-muted">Metode Pengiriman</p>
+                        </td>
+                        <td><p>></p></td>
+                        <td>
+                            <p class="text-muted">Invoice</p>
+                        </td>
+                    </tr>
+                </table>
+                <form>
+                    <div>
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" autocomplete="email" required>
+                    </div>
+                    <div>
+                        <label for="name" class="form-label">Nama</label>
+                        <input type="text" class="form-control" id="name" autocomplete="name" required>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div style="flex-basis: 49%;">
+                            <label for="province" class="form-label">Provinsi</label>
+                            <input type="text" class="form-control" id="province" required>
+                        </div>
+                        <div style="flex-basis: 49%;">
+                            <label for="city" class="form-label">Kota / Kabupaten</label>
+                            <input type="text" class="form-control" id="city" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="address" class="form-label">Alamat</label>
+                        <textarea class="form-control" id="address" autocomplete="street-address" rows="3" required></textarea>
+                    </div>
+                    <div>
+                        <div class="d-flex justify-content-between">
+                            <div style="flex-basis: 49%;">
+                                <label for="postalCode" class="form-label">Kode Pos</label>
+                                <input type="text" class="form-control" id="postalCode" required>
+                            </div>
+                            <div style="flex-basis: 49%;">
+                                <label for="telepon" class="form-label">Telepon</label>
+                                <input type="text" class="form-control" id="telepon" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="dropshipper" class="form-check-label">Kirim sebagai dropshipper</label>
+                        <input type="checkbox" class="form-check-input" id="dropshipper" name="dropshipper"
+                            onclick="toggleDropshipperInputs()" style="margin-top: 6px;">
+                    </div>
+                    <div class="dropshipper-inputs" style="display: none;">
+                        <div class="d-flex justify-content-between">
+                            <div style="flex-basis: 49%;">
+                                <label class="form-label" for="dropshipperName">Nama
+                                    Dropshipper</label>
+                                <input type="text" class="form-control" id="dropshipperName" required>
+                            </div>
+                            <div style="flex-basis: 49%;">
+                                <label for="shippingPhone" class="form-label">Telepon
+                                    Dropshipper</label>
+                                <input type="tel" class="form-control" id="shippingPhone" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3 text-end">
+                        <button class="btn btn-primary" onclick="lanjutKePengiriman()">Lanjutkan</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h3 class="mb-3">Keranjang Belanja</h3>
+                <table class="table">
+                    <thead class="text-center">
+                        <tr>
+                            <th>Gambar</th>
+                            <th>Produk</th>
+                            <th>Harga</th>
+                            <th>Jumlah</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>    
+                    <tbody class="text-center">
+                        <tr class="align-middle">
+                            <td id="productImage" style="width: 10px; height: 10px;"></td>
+                            <td id="productName"></td>
+                            <td id="productPrice"></td>
+                            <td id="productQuantity"></td>
+                            <td id="subTotalPrice">Rp</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <form>
+                                <th colspan="4">
+                                    <div style="margin-bottom: 30px;">
+                                        <label for="couponCode" class="form-label">Kode Kupon</label>
+                                        <input type="text" class="form-control" id="couponCode">
+                                    </div>
+                                </th>
+                                <th>
+                                    <button type="submit" class="btn btn-secondary">Terapkan Kupon</button>
+                                </th>
+                            </form>
+                        </tr>
+                        <tr>
+                            <th colspan="4" class="text-end">Total</th>
+                            <th id="TotalPrice">Rp0</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <!-- No WhatsApp -->
+                <div class="col-md-4 mb-3">
+                    <p>
+                        <i class="bi bi-whatsapp text-success"></i>
+                        <a href="https://api.whatsapp.com/send?phone=6212345678" class="text-decoration-none"
+                            target="_blank">+62 1234 5678</a>
+                    </p>
+                </div>
+
+                <!-- Alamat -->
+                <div class="col-md-4 mb-3">
+                    <p>
+                        <i class="bi bi-house-door text-danger"></i>
+                        <a href="https://www.google.com/maps?q=Jalan+Contoh+No.+123,+Kota+Contoh,+12345"
+                            class="text-decoration-none" target="_blank">
+                            Jalan Contoh No. 123, Kota Contoh, 12345
+                        </a>
+                    </p>
+                </div>
+
+                <!-- Jam Operasional -->
+                <div class="col-md-4 mb-3">
+                    <p><i class="bi bi-clock text-primary"></i> Jam Operasional:</p>
+                    <p>Senin - Sabtu</p>
+                    <p>08.00 - 17.00 WIB</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

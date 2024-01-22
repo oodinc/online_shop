@@ -1,3 +1,16 @@
+body {
+    background-color: #ffffff;
+    color: #15003b; 
+}
+
+.navbar {
+    background-color: #ffffff; 
+}
+
+.navbar-nav .nav-link {
+    color: #15003b; 
+}
+
 .navbar-brand img {
     max-width: 100%;
     height: auto;
@@ -5,20 +18,45 @@
 
 .navbar-toggler-icon {
     color: #15003b;
-    /* Dark purple color */
 }
 
 .navbar-light .navbar-nav .nav-link {
     color: #15003b;
-    /* Dark purple color */
 }
 
 .navbar-light .navbar-toggler-icon {
     color: #15003b;
-    /* Dark purple color */
+}
+
+footer {
+    background-color: #15003b; 
+    color: #ffffff; 
+}
+
+footer a {
+    color: #ffffff;
+}
+
+footer a:hover {
+    color: #ff69b4;
+}
+
+.card {
+    border: 1px solid #15003b;
+    color: #15003b; 
+}
+
+.card:hover {
+    border: 1px solid #ff69b4; 
+}
+
+.card-title {
+    color: #15003b;
 }
 
 .product-container {
+    background-color: #ffffff; 
+    border: 1px solid #4205b2; 
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -73,11 +111,21 @@
     margin-top: 20px;
 }
 
+.btn {
+    background-color: #ff69b4; 
+    border-color: #ff69b4;
+    color: #ffffff; 
+}
+
+.btn:hover {
+    background-color: #d23669; 
+    border-color: #d23669;
+}
+
 .product-description {
     margin-top: 20px;
 }
 
-/* Additional styles for better aesthetics */
 select {
     width: 100%;
     padding: 8px;
@@ -95,11 +143,52 @@ input[type="number"] {
     box-sizing: border-box;
 }
 
+.form-control {
+    background-color: #ffffff;
+    border: 1px solid #15003b; 
+    color: #15003b;
+}
+
+.form-control:focus {
+    border-color: #ff69b4; 
+}
+
+.form-check-input {
+    background-color: #ffffff; 
+    border: 1px solid #15003b;
+}
+
+.form-check-input:checked {
+    background-color: #ff69b4;
+    border-color: #ff69b4; 
+}
+
+.table {
+    color: #15003b; 
+}
+
 .form-container {
-    max-width: 600px;
+    max-width: 1000px;
+    max-height: 100%;
     margin: 0 auto;
-    padding: 20px; /* Tambahkan padding */
-    border-radius: 10px; /* Tambahkan border-radius untuk sudut yang lebih lembut */
+    padding: 20px; 
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.left-column {
+    flex-basis: 50%; 
+}
+
+.right-column {
+    flex-basis: 50%; 
+    background-color: #f0f0f0;
+}
+
+p.active {
+    color: #ff69b4;
 }
 
 #checkoutForm {
@@ -165,4 +254,31 @@ input[type="number"] {
 
 .toggle-switch input:checked + label:before {
     transform: translateX(24px); 
+}
+
+.delivey-container {
+    max-width: 600px;
+    max-height: 100%;
+    margin: 0 auto;
+    padding: 20px; 
+    border-radius: 10px;
+}
+
+#metodePengirimanForm {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.metode-logo { 
+    height: auto;
+    margin: 10px; 
+}
+
+.dropdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    max-height: 200px;
+    overflow-y: auto;
 }
