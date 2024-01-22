@@ -5,10 +5,6 @@ This is a simple e-commerce website project named KENESAYU. The project includes
 ## Table of Contents
 - [Introduction](#introduction)
 - [Getting Started](#getting-started)
-- [Project Structure](#project-structure)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
