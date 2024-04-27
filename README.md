@@ -1,4 +1,4 @@
-# KENESAYU
+# Online Shop
 
 This is a simple e-commerce website project named KENESAYU. The project includes product displays for categories such as "Tas" (bags), "Kaos" (shirts), and "Parfum" (perfumes).
 
